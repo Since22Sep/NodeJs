@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: burlywood;
+            /* box-shadow : offset-x offset -y color */
+            /* box-shadow : offset-x offset-y blur-radius color */
+            /* box-shadow : offset-x offset-y blur-radius spread-radius color  */
+            /* box-shadow: 10px 13px green; */
+            /* if we write the above values in the negative , the shadow will move upwards  */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 7px 5px 10px green; */
+
+            box-shadow: inset 3px 5px green ;
+            box-shadow: 3px 5px green , 4px 6px red;
+
+           
+        }
+        .card h2{
+            /* text-shadow: 3px 4px whitesmoke; */
+            text-shadow:3px 4px 3px white ;
+            /* negative shadow also works here */
+        }
+    </style>
+</head>
+<body>
+    <!--
+        The box-shadow adds shadow effects around an elements frame. 
+        We can set multiple effects separated by commas.
+
+        The text-shadow CSS property adds a shadow to text.
+      -->
+
+      <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is CSS course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In cumque tempore labore, minus illo officiis commodi maxime ea eligendi voluptas corporis accusamus dolorum repellendus ut?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dicta. Iusto ut nulla, delectus aspernatur recusandae soluta, ipsum at expedita consectetur tenetur voluptates impedit quasi!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem laborum laudantium, hic totam corrupti rerum perferendis eum cupiditate doloremque non ipsum enim omnis alias eos!</p>
+        </div>
+      </div>
+</body>
+</html>
